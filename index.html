@@ -15,9 +15,9 @@
     <!-- general container -->
     <div id="app" class="container">
 
-        <ol>
+        <ol v-if="mailingList.length === 10">
             <li v-for="mail in mailingList">
-                {{mail}}
+                {{ mail }}
             </li>
         </ol>
         
